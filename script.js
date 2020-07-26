@@ -24,12 +24,36 @@ function createGrid (num) {
 }
 
 function fillBG (e) {
-    this.classList.add('black');
+    this.classList.add('black'); // on hover, add class="black" to that specific grid-box
 }
 
-createGrid(5);
+function clearGrid () {
+    const boxes = document.querySelectorAll('.grid-box');
+    boxes.forEach(item => item.classList.remove('black'));
+}
 
+//Add event listener to every grid-box 
+function addBoxEventListeners () {
+    const boxes = document.querySelectorAll('.grid-box');
+    boxes.forEach(item => item.addEventListener('mouseenter', fillBG));
+}
 
-//Add event lister to 
-const boxes = document.querySelectorAll('.grid-box');
-boxes.forEach(item => item.addEventListener('mouseenter', fillBG));
+function changeGrid () {
+    boxNum = prompt("Enter new grid size");
+    deleteGrid();
+    createGrid(boxNum);
+    addBoxEventListeners();
+}
+
+function deleteGrid () {
+    let node = document.querySelector('.screen');
+    node.innerHTML="";
+}
+
+let boxNum = 24; //Default Grid Size
+createGrid(boxNum);
+addBoxEventListeners();
+
+//Button Event Listeners
+document.querySelector('.clear-grid-btn').addEventListener('click', clearGrid);
+document.querySelector('.change-grid-btn').addEventListener('click', changeGrid);
