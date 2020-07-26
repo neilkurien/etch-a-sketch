@@ -23,4 +23,13 @@ function createGrid (num) {
     }
 }
 
+function fillBG (e) {
+    this.classList.add('black');
+}
+
 createGrid(5);
+
+
+//Add event lister to 
+const boxes = document.querySelectorAll('.grid-box');
+boxes.forEach(item => item.addEventListener('mouseenter', fillBG));
