@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left {
+    background-color: aquamarine;
+}
+
+.right {
+    background-color: azure;
+    display: grid;
+    place-items: center;
+}
+
+.screen {
+    width: 45vw;
+    max-width: 30vw;
+    height: 45vw;
+    max-height: 30vw;
+
+    border: 5px solid black;
+    border-radius: 2%;
+    background-color: aquamarine;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.rowContainer {
+    height: 100%;
+    display: flex;
+    align-content: stretch;
+}
+
+.grid-box {
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+}
