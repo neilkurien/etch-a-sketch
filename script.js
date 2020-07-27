@@ -36,6 +36,7 @@ function clearGrid () {
 function addBoxEventListeners () {
     const boxes = document.querySelectorAll('.grid-box');
     boxes.forEach(item => item.addEventListener('mouseenter', fillBG));
+    boxes.forEach(item => item.addEventListener('touchmove', fillBG));
 }
 
 function changeGrid () {
