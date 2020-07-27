@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .container {
@@ -29,6 +32,8 @@ button {
     color: white;
     filter: drop-shadow(4px 5px white);
     border: 2px solid white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
 }
 
 .bold {
@@ -48,6 +53,25 @@ button:focus {
 
 .main-heading {
     margin-bottom: 10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+}
+
+.underline {
+    text-decoration: none; 
+    position: relative; 
+}  
+
+.underline:after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    bottom: -10px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 50%;
+    background: white;
 }
 
 p {
