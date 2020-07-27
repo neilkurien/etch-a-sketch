@@ -8,15 +8,23 @@
 
     <div class="container">
         <div class="left">
-            <button class="clear-grid-btn">Clear Grid</button>
-            <button class="change-grid-btn">Change Number of Grid Boxes</button>
+            <div class="left-container">
+                <h1 class="main-heading">Etch-a-Sketch</h1>
+                <p class="tagline">Designed and coded by <span class="bold">Neil Kurien</span>.</p>
+                <p>
+                    Use your mouse or finger to draw over the etch-a-sketch grid.
+                </p>
+                <button class="clear-grid-btn">Clear Grid</button>
+                <button class="change-grid-btn">Resize Grid</button>
+            </div>
         </div>
         <div class="right">
+            <div class="bg-responsive"></div>
             <div class="right-container">
                 <div class="screen"></div>
-                <img src="./etch-a-sketch-body.svg" alt="Etch a Sketch Device" class="etch-body">
-                <img src="./etch-knob.svg" alt="Etch a Sketch Knob" class="etch-knob knob-left">
-                <img src="./etch-knob.svg" alt="Etch a Sketch Knob" class="etch-knob knob-right">
+                <img src="./etch-a-sketch-body.svg" alt="Etch a Sketch Device" class="etch-body" draggable="false">
+                <img src="./etch-knob.svg" alt="Etch a Sketch Knob" class="etch-knob knob-left" draggable="false">
+                <img src="./etch-knob.svg" alt="Etch a Sketch Knob" class="etch-knob knob-right" draggable="false">
             </div>
         </div>
     </div>
