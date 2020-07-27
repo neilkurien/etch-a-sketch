@@ -17,9 +17,12 @@
     background-color: #C11F32;
     display: grid;
     place-items: center;
+    position: relative;
 }
 
 .left-container {
+    position: absolute;
+    z-index: 1;
     text-align: center;
     color: white;
     padding: 25px;
@@ -72,6 +75,10 @@ button:focus {
     right: 0;
     width: 50%;
     background: white;
+}
+
+.tagline {
+    margin-top: 20px;
 }
 
 p {
