@@ -39,7 +39,7 @@ function addBoxEventListeners () {
 }
 
 function changeGrid () {
-    boxNum = prompt("Enter new grid size");
+    boxNum = prompt("Enter new grid size", "24");
     deleteGrid();
     createGrid(boxNum);
     addBoxEventListeners();
